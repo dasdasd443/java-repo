@@ -22,6 +22,14 @@ public class main {
             System.out.println("You have choicesn 1");
         }
 
+        switch(choice){
+            case 1: displayLoop();
+        }
+
+
+    }
+
+    public static void displayLoop(){
         int i = 0;
         for (;i<5;i++){
             System.out.println(i);
