@@ -8,7 +8,8 @@ public class main {
         float xd = 1254.3f;
         byte e;
         boolean d;
+        char xcd = '\0';
 
-
+        
     }
 }
