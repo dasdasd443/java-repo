@@ -46,7 +46,10 @@ public class main {
         int array[] = {1,2,3,4,5};
         for(int anothernumber:array)
         {
-            System.out.println(anothernumber);
+            System.out.println("Squared: " + anothernumber * anothernumber);
+            System.out.println("Square roort: " + anothernumber / anothernumber);
+            System.out.println("Addition: "+ anothernumber + anothernumber);
+
         }
     }
 }
