@@ -27,7 +27,8 @@ public class main {
 
         switch(choice){
             case 1: displayLoop();break;
-            default: System.out.println("This is not a command!");break;
+            case 2: System.out.println(summation(10));break;
+            default: square(10);break;
         }
 
         System.out.println("Enter the day: ");
@@ -91,5 +92,21 @@ public class main {
             anothernumber%=2;
             System.out.println("Modulo: " + (float)anothernumber % 2);
         }
+    }
+
+    public static void square(int n){
+        int i=0;
+        while(i<n){
+            System.out.print("[" + (++i) + "]");
+        }
+    }
+
+    public static int summation(int n){
+        int i =1,retval = 0;
+        while(i<=n){
+            retval+= (i++);
+        }
+
+        return retval;
     }
 }
