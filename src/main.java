@@ -27,6 +27,7 @@ public class main {
 
         switch(choice){
             case 1: displayLoop();break;
+            default: System.out.println("This is not a command!");break;
         }
 
 
@@ -50,9 +51,14 @@ public class main {
         for(int anothernumber:array)
         {
             System.out.println("Squared: " + anothernumber * anothernumber);
+            anothernumber+=5;
             System.out.println("Square roort: " + anothernumber / (anothernumber + 5));
+            anothernumber-=3;
             System.out.println("Addition: "+ (anothernumber + anothernumber));
+            anothernumber*=6;
             System.out.println("Subtraction: " + (anothernumber - (anothernumber + 3)));
+            anothernumber/=4;
+            anothernumber%=2;
             System.out.println("Modulo: " + anothernumber % 2);
         }
     }
