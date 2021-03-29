@@ -48,7 +48,7 @@ public class main {
         {
             System.out.println("Squared: " + anothernumber * anothernumber);
             System.out.println("Square roort: " + anothernumber / anothernumber);
-            System.out.println("Addition: "+ anothernumber + anothernumber);
+            System.out.println("Addition: "+ (anothernumber + anothernumber));
 
         }
     }
