@@ -59,7 +59,7 @@ public class main {
             System.out.println("Subtraction: " + (anothernumber - (anothernumber + 3)));
             anothernumber/=4;
             anothernumber%=2;
-            System.out.println("Modulo: " + anothernumber % 2);
+            System.out.println("Modulo: " + (float)anothernumber % 2);
         }
     }
 }
