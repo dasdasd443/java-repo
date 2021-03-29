@@ -18,12 +18,15 @@ public class main {
         System.out.println("Enter your choice: ");
         choice = input.nextInt();
 
-        if(choice == 1){
-            System.out.println("You have choicesn 1");
+        if(choice >= 1 && choice <=5){
+            System.out.println("This is a positive number");
+        }else if(choice < 1 && choice >= -5)
+        {
+            System.out.println("This is a negative number!");
         }
 
         switch(choice){
-            case 1: displayLoop();
+            case 1: displayLoop();break;
         }
 
 
@@ -47,9 +50,10 @@ public class main {
         for(int anothernumber:array)
         {
             System.out.println("Squared: " + anothernumber * anothernumber);
-            System.out.println("Square roort: " + anothernumber / anothernumber);
+            System.out.println("Square roort: " + anothernumber / (anothernumber + 5));
             System.out.println("Addition: "+ (anothernumber + anothernumber));
-
+            System.out.println("Subtraction: " + (anothernumber - (anothernumber + 3)));
+            System.out.println("Modulo: " + anothernumber % 2);
         }
     }
 }
