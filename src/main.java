@@ -28,6 +28,7 @@ public class main {
         switch(choice){
             case 1: displayLoop();break;
             case 2: System.out.println(summation(10));break;
+            case 3: evenNumbers(input.nextInt());break;
             default: square(10);break;
         }
 
@@ -104,9 +105,19 @@ public class main {
     public static int summation(int n){
         int i =1,retval = 0;
         while(i<=n){
+            System.out.print(i + " + ");
             retval+= (i++);
         }
 
+        System.out.println(" = " + retval);
+
         return retval;
+    }
+
+    public static void evenNumbers(int n){
+        int i=1;
+        do{
+            System.out.print(((i++) * 2) + " ");
+        }while(i<=n);
     }
 }
