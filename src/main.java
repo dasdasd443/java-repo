@@ -29,6 +29,10 @@ public class main {
             case 1: displayLoop();break;
             case 2: System.out.println(summation(10));break;
             case 3: evenNumbers(input.nextInt());break;
+            case 4:fibonacci(input.nextInt());break;
+            case 5: int a[] = {10,3,5,-20,0,23}; System.out.println(summy(a));break;
+            case 6: String b = "Hello world xd usa";System.out.println(countWords(b));break;
+            case 7: String c = "Helloe worldae";System.out.println(countVowels(c));break;
             default: square(10);break;
         }
 
@@ -119,5 +123,44 @@ public class main {
         do{
             System.out.print(((i++) * 2) + " ");
         }while(i<=n);
+    }
+
+    public static void fibonacci(int n){
+        int i = 0, prev = 0, next = 1,total = 1;
+        for(;i<=n;i++){
+            System.out.print(total + " ");
+            total = prev + next;
+            prev = next;
+            next = total;
+
+
+        }
+    }
+
+    public static int summy(int n[]){
+        int total = 0;
+        for(int x:n){
+            total+= x;
+        }
+
+        return total;
+    }
+
+    public static int countWords(String arr){
+        return arr.split(" ").length;
+    }
+
+    public static int countVowels(String arr){
+        int count = 0;
+        for(String x: arr.split("")){
+            switch(x){
+                case "a":count++;break;
+                case "e":count++;break;
+                case "i":count++;break;
+                case "o":count++;break;
+                case "u":count++;break;
+            }
+        }
+        return count;
     }
 }
